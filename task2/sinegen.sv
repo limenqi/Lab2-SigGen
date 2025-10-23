@@ -24,7 +24,7 @@ assign addr2 = addr + offset;
 
 rom sinerom (
     .clk(clk),
-    .addr1(addr),
+    .addr1(addr), // addr from counter goes into addr1 in rom
     .addr2(addr2),
     .dout1(dout1),
     .dout2(dout2)   
