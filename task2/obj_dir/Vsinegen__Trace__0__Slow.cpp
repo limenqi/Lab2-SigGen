@@ -29,7 +29,7 @@ VL_ATTR_COLD void Vsinegen___024root__trace_init_sub__TOP__0(Vsinegen___024root*
     tracep->declBit(c+4,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBus(c+5,0,"dout1",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
     tracep->declBus(c+6,0,"dout2",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
-    tracep->declBus(c+7,0,"addr",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
+    tracep->declBus(c+7,0,"addr1",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
     tracep->declBus(c+8,0,"addr2",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::VAR, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
     tracep->pushPrefix("addrCounter", VerilatedTracePrefixType::SCOPE_MODULE);
     tracep->declBus(c+9,0,"INPUT_WIDTH",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
@@ -122,7 +122,7 @@ VL_ATTR_COLD void Vsinegen___024root__trace_full_0_sub_0(Vsinegen___024root* vlS
     bufp->fullBit(oldp+4,(vlSelfRef.clk));
     bufp->fullCData(oldp+5,(vlSelfRef.dout1),8);
     bufp->fullCData(oldp+6,(vlSelfRef.dout2),8);
-    bufp->fullCData(oldp+7,(vlSelfRef.sinegen__DOT__addr),8);
+    bufp->fullCData(oldp+7,(vlSelfRef.sinegen__DOT__addr1),8);
     bufp->fullCData(oldp+8,((0xffU & ((IData)(vlSelfRef.offset) 
-                                      + (IData)(vlSelfRef.sinegen__DOT__addr)))),8);
+                                      + (IData)(vlSelfRef.sinegen__DOT__addr1)))),8);
 }

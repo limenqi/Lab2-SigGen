@@ -28,21 +28,21 @@ VL_INLINE_OPT void Vsinegen___024root___nba_sequent__TOP__0(Vsinegen___024root* 
     Vsinegen__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    CData/*7:0*/ __Vdly__sinegen__DOT__addr;
-    __Vdly__sinegen__DOT__addr = 0;
+    CData/*7:0*/ __Vdly__sinegen__DOT__addr1;
+    __Vdly__sinegen__DOT__addr1 = 0;
     // Body
-    __Vdly__sinegen__DOT__addr = vlSelfRef.sinegen__DOT__addr;
+    __Vdly__sinegen__DOT__addr1 = vlSelfRef.sinegen__DOT__addr1;
     if (vlSelfRef.rst) {
-        __Vdly__sinegen__DOT__addr = 0U;
+        __Vdly__sinegen__DOT__addr1 = 0U;
     } else if (vlSelfRef.en) {
-        __Vdly__sinegen__DOT__addr = (0xffU & ((IData)(1U) 
-                                               + (IData)(vlSelfRef.sinegen__DOT__addr)));
+        __Vdly__sinegen__DOT__addr1 = (0xffU & ((IData)(1U) 
+                                                + (IData)(vlSelfRef.sinegen__DOT__addr1)));
     }
     vlSelfRef.dout1 = vlSelfRef.sinegen__DOT__sinerom__DOT__rom_array
-        [vlSelfRef.sinegen__DOT__addr];
+        [vlSelfRef.sinegen__DOT__addr1];
     vlSelfRef.dout2 = vlSelfRef.sinegen__DOT__sinerom__DOT__rom_array
-        [(0xffU & ((IData)(vlSelfRef.offset) + (IData)(vlSelfRef.sinegen__DOT__addr)))];
-    vlSelfRef.sinegen__DOT__addr = __Vdly__sinegen__DOT__addr;
+        [(0xffU & ((IData)(vlSelfRef.offset) + (IData)(vlSelfRef.sinegen__DOT__addr1)))];
+    vlSelfRef.sinegen__DOT__addr1 = __Vdly__sinegen__DOT__addr1;
 }
 
 void Vsinegen___024root___eval_triggers__act(Vsinegen___024root* vlSelf);

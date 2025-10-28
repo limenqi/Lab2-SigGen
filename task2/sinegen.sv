@@ -11,20 +11,20 @@ module sinegen #(
     output logic [D_WIDTH-1:0] dout2
 );
 
-    logic [A_WIDTH-1:0] addr, addr2;
+    logic [A_WIDTH-1:0] addr1, addr2;
 
 counter addrCounter (
     .rst(rst),
     .en(en),
     .clk(clk),
-    .count(addr)
+    .count(addr1)
 );
 
-assign addr2 = addr + offset;
+assign addr2 = addr1 + offset;
 
 rom sinerom (
     .clk(clk),
-    .addr1(addr), // addr from counter goes into addr1 in rom
+    .addr1(addr1), 
     .addr2(addr2),
     .dout1(dout1),
     .dout2(dout2)   

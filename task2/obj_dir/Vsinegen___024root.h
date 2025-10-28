@@ -20,7 +20,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vsinegen___024root final : public VerilatedMo
     VL_IN8(en,0,0);
     VL_OUT8(dout1,7,0);
     VL_OUT8(dout2,7,0);
-    CData/*7:0*/ sinegen__DOT__addr;
+    CData/*7:0*/ sinegen__DOT__addr1;
     CData/*7:0*/ sinegen__DOT__addrCounter__DOT__offset;
     CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
     CData/*0:0*/ __VactContinue;

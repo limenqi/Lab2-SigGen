@@ -21,3 +21,4 @@ always_ff @(posedge clk) begin
     dout2 <= rom_array[addr2];
     end 
 endmodule
+

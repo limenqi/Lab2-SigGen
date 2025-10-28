@@ -93,7 +93,7 @@ VL_ATTR_COLD void Vsinegen___024root___ctor_var_reset(Vsinegen___024root* vlSelf
     vlSelf->clk = VL_SCOPED_RAND_RESET_I(1, __VscopeHash, 16707436170211756652ull);
     vlSelf->dout1 = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 7302586033294002808ull);
     vlSelf->dout2 = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 3738420269178437768ull);
-    vlSelf->sinegen__DOT__addr = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 14437488707587401712ull);
+    vlSelf->sinegen__DOT__addr1 = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 15643955529062027673ull);
     vlSelf->sinegen__DOT__addrCounter__DOT__offset = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 4129894544911012537ull);
     for (int __Vi0 = 0; __Vi0 < 256; ++__Vi0) {
         vlSelf->sinegen__DOT__sinerom__DOT__rom_array[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 864451693869713000ull);
