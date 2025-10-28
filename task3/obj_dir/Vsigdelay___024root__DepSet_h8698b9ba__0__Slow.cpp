@@ -74,7 +74,7 @@ VL_ATTR_COLD void Vsigdelay___024root___ctor_var_reset(Vsigdelay___024root* vlSe
     vlSelf->offset = VL_SCOPED_RAND_RESET_I(9, __VscopeHash, 10670815542329643570ull);
     vlSelf->mic_signal = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 512805217010965749ull);
     vlSelf->delayed_signal = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 16339064174763787571ull);
-    vlSelf->sigdelay__DOT____Vcellout__addrCounter__wr_addr = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 16144199080155968770ull);
+    vlSelf->sigdelay__DOT____Vcellout__addrCounter__rd_addr = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 12712728412813840780ull);
     for (int __Vi0 = 0; __Vi0 < 512; ++__Vi0) {
         vlSelf->sigdelay__DOT__RAM__DOT__ram_array[__Vi0] = VL_SCOPED_RAND_RESET_I(8, __VscopeHash, 10034818441085726667ull);
     }

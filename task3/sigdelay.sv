@@ -18,7 +18,7 @@ module sigdelay #(
 counter addrCounter (
     .rst(rst),
     .clk(clk),
-    .wr_addr(rd_addr)
+    .rd_addr(rd_addr)
 );
 
 ram RAM (

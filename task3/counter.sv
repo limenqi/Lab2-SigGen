@@ -4,12 +4,14 @@ module counter #(
 )(
     input  logic rst,
     input  logic clk,
-    output logic [OUTPUT_WIDTH-1:0] wr_addr
+    output logic [OUTPUT_WIDTH-1:0] rd_addr
 );
 
 always_ff @(posedge clk) begin
-    if (rst) wr_addr <= '0;
-    else wr_addr <= wr_addr + 1;
+    if (rst) rd_addr <= '0;
+    else rd_addr <= rd_addr + 1;
 end
 
 endmodule
+
+

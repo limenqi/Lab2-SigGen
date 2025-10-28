@@ -47,7 +47,7 @@ VL_ATTR_COLD void Vsigdelay___024root__trace_init_sub__TOP__0(Vsigdelay___024roo
     tracep->declBus(c+12,0,"OUTPUT_WIDTH",-1, VerilatedTraceSigDirection::NONE, VerilatedTraceSigKind::PARAMETER, VerilatedTraceSigType::LOGIC, false,-1, 31,0);
     tracep->declBit(c+1,0,"rst",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
     tracep->declBit(c+4,0,"clk",-1, VerilatedTraceSigDirection::INPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1);
-    tracep->declBus(c+10,0,"wr_addr",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
+    tracep->declBus(c+10,0,"rd_addr",-1, VerilatedTraceSigDirection::OUTPUT, VerilatedTraceSigKind::WIRE, VerilatedTraceSigType::LOGIC, false,-1, 7,0);
     tracep->popPrefix();
     tracep->popPrefix();
 }
@@ -123,8 +123,8 @@ VL_ATTR_COLD void Vsigdelay___024root__trace_full_0_sub_0(Vsigdelay___024root* v
     bufp->fullSData(oldp+5,(vlSelfRef.offset),9);
     bufp->fullCData(oldp+6,(vlSelfRef.mic_signal),8);
     bufp->fullCData(oldp+7,(vlSelfRef.delayed_signal),8);
-    bufp->fullSData(oldp+8,(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr),9);
-    bufp->fullSData(oldp+9,((0x1ffU & ((IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr) 
+    bufp->fullSData(oldp+8,(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr),9);
+    bufp->fullSData(oldp+9,((0x1ffU & ((IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr) 
                                        + (IData)(vlSelfRef.offset)))),9);
-    bufp->fullCData(oldp+10,(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr),8);
+    bufp->fullCData(oldp+10,(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr),8);
 }

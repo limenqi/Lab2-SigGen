@@ -28,8 +28,8 @@ VL_INLINE_OPT void Vsigdelay___024root___nba_sequent__TOP__0(Vsigdelay___024root
     Vsigdelay__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     auto& vlSelfRef = std::ref(*vlSelf).get();
     // Init
-    CData/*7:0*/ __Vdly__sigdelay__DOT____Vcellout__addrCounter__wr_addr;
-    __Vdly__sigdelay__DOT____Vcellout__addrCounter__wr_addr = 0;
+    CData/*7:0*/ __Vdly__sigdelay__DOT____Vcellout__addrCounter__rd_addr;
+    __Vdly__sigdelay__DOT____Vcellout__addrCounter__rd_addr = 0;
     CData/*7:0*/ __VdlyVal__sigdelay__DOT__RAM__DOT__ram_array__v0;
     __VdlyVal__sigdelay__DOT__RAM__DOT__ram_array__v0 = 0;
     SData/*8:0*/ __VdlyDim0__sigdelay__DOT__RAM__DOT__ram_array__v0;
@@ -37,30 +37,30 @@ VL_INLINE_OPT void Vsigdelay___024root___nba_sequent__TOP__0(Vsigdelay___024root
     CData/*0:0*/ __VdlySet__sigdelay__DOT__RAM__DOT__ram_array__v0;
     __VdlySet__sigdelay__DOT__RAM__DOT__ram_array__v0 = 0;
     // Body
-    __Vdly__sigdelay__DOT____Vcellout__addrCounter__wr_addr 
-        = vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr;
+    __Vdly__sigdelay__DOT____Vcellout__addrCounter__rd_addr 
+        = vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr;
     __VdlySet__sigdelay__DOT__RAM__DOT__ram_array__v0 = 0U;
-    __Vdly__sigdelay__DOT____Vcellout__addrCounter__wr_addr 
+    __Vdly__sigdelay__DOT____Vcellout__addrCounter__rd_addr 
         = ((IData)(vlSelfRef.rst) ? 0U : (0xffU & ((IData)(1U) 
-                                                   + (IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr))));
+                                                   + (IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr))));
     if (vlSelfRef.wr) {
         __VdlyVal__sigdelay__DOT__RAM__DOT__ram_array__v0 
             = vlSelfRef.mic_signal;
         __VdlyDim0__sigdelay__DOT__RAM__DOT__ram_array__v0 
-            = (0x1ffU & ((IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr) 
+            = (0x1ffU & ((IData)(vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr) 
                          + (IData)(vlSelfRef.offset)));
         __VdlySet__sigdelay__DOT__RAM__DOT__ram_array__v0 = 1U;
     }
     if (vlSelfRef.rd) {
         vlSelfRef.delayed_signal = vlSelfRef.sigdelay__DOT__RAM__DOT__ram_array
-            [vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr];
+            [vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr];
     }
     if (__VdlySet__sigdelay__DOT__RAM__DOT__ram_array__v0) {
         vlSelfRef.sigdelay__DOT__RAM__DOT__ram_array[__VdlyDim0__sigdelay__DOT__RAM__DOT__ram_array__v0] 
             = __VdlyVal__sigdelay__DOT__RAM__DOT__ram_array__v0;
     }
-    vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__wr_addr 
-        = __Vdly__sigdelay__DOT____Vcellout__addrCounter__wr_addr;
+    vlSelfRef.sigdelay__DOT____Vcellout__addrCounter__rd_addr 
+        = __Vdly__sigdelay__DOT____Vcellout__addrCounter__rd_addr;
 }
 
 void Vsigdelay___024root___eval_triggers__act(Vsigdelay___024root* vlSelf);

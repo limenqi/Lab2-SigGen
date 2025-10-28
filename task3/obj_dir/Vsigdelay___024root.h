@@ -20,7 +20,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vsigdelay___024root final : public VerilatedM
     VL_IN8(rd,0,0);
     VL_IN8(mic_signal,7,0);
     VL_OUT8(delayed_signal,7,0);
-    CData/*7:0*/ sigdelay__DOT____Vcellout__addrCounter__wr_addr;
+    CData/*7:0*/ sigdelay__DOT____Vcellout__addrCounter__rd_addr;
     CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
     CData/*0:0*/ __VactContinue;
     VL_IN16(offset,8,0);
